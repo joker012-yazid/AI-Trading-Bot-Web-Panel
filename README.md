@@ -14,6 +14,7 @@ Satu aplikasi *AI Trading Bot* yang boleh dikawal melalui *antara muka web*. Bot
 2. ⚙ *Tetapan Dagangan*
    - Pilih simbol: XAU/USD, US30
    - Tetapkan saiz lot, Stop Loss, Take Profit
+   - Tetapan disimpan ke `trading/config.json`
 
 3. 📋 *Log Aktiviti*
    - Lihat semua aktiviti bot: trade dibuka, status sambungan, ralat
