@@ -14,6 +14,7 @@ Satu aplikasi *AI Trading Bot* yang boleh dikawal melalui *antara muka web*. Bot
 2. ⚙ *Tetapan Dagangan*
    - Pilih simbol: XAU/USD, US30
    - Tetapkan saiz lot, Stop Loss, Take Profit
+   - Tetapan disimpan ke `trading/config.json`
 
 3. 📋 *Log Aktiviti*
    - Lihat semua aktiviti bot: trade dibuka, status sambungan, ralat
@@ -41,7 +42,7 @@ AI_Trading_Bot_Web/
 
 - Python 3.8+
 - Flask
-- MetaTrader5 (package Python)
+- (Pilihan) Pakej MetaTrader5 untuk sambungan sebenar
 - MT4/MT5 dipasang di Windows
 
 - Sambungan ke terminal MT5 (sedia log masuk akaun demo/real)
@@ -50,19 +51,25 @@ AI_Trading_Bot_Web/
 
 🔧 Cara Pasang & Jalankan
 
-1. Pasang pakej keperluan:
+1. Pasang pakej keperluan asas:
 
 bash
 pip install -r requirements.txt
 
 
-2. Jalankan server Flask:
+2. (Opsyenal) Pasang `MetaTrader5` jika mahu sambungan sebenar:
+
+bash
+pip install MetaTrader5
+
+
+3. Jalankan server Flask:
 
 bash
 python app.py
 
 
-3. Buka browser:
+4. Buka browser:
 
 
 http://localhost:5000
